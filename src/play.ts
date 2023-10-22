@@ -20,7 +20,7 @@ export default class PlayGame {
   scanButtonX: number;
   scanButtonY: number;
 
-  constructor(page: Page, width: number, height: number) {
+  constructor(page: Page, width: number, height: number, startingPosition?: number, movingDirection?: string) {
     this.page = page;
     this.width = width;
     this.height = height;
