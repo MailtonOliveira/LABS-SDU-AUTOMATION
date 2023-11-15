@@ -1,5 +1,5 @@
 import { Page } from "puppeteer";
-import {sleep} from "./utils";
+import {injectClickDisplay,sleep} from "./utils";
 
 export default class PlayGame {
   page: Page;
@@ -43,6 +43,7 @@ export default class PlayGame {
   async startPlaying(){
     await this.page.mouse.wheel({deltaY: 200})
     await sleep(1000);
+    await injectClickDisplay(this.page, this.sectorScanX, this.sectorScanY);
     await this.page.mouse.click(this.sectorScanX, this.sectorScanY)
     await sleep(1000)
 
@@ -55,7 +56,8 @@ export default class PlayGame {
   }
 
   private async scan(page: Page) {
-    await this.page.mouse.click(this.centerX + 520,this.centerY + 370)
+    await injectClickDisplay(this.page, this.centerX + 520, this.centerY + 370);
+    await this.page.mouse.click(this.centerX + 520,this.centerY + 380)
     await sleep(121000);
 
   }
