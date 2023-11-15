@@ -5,7 +5,7 @@ import { alertPage, sleep} from "./utils";
 //NEED TO CHANGE THESE TWO LINES FOR THE BOT TO WORK
 /***************************************************************************************************************************************************/
 const paused = false
-export const extensionPath = "C:\\Users\\Mailton\\AppData\\Local\\Google\\Chrome\\User Data\\Default\\Extensions\\bhhhlbepdkbapadjdnnojkbgioiodbic\\1.52.0_0";
+export const extensionPath = "C:\\Users\\Mailton\\AppData\\Local\\Google\\Chrome\\User Data\\Default\\Extensions\\bhhhlbepdkbapadjdnnojkbgioiodbic\\1.55.0_0";
 /***************************************************************************************************************************************************/
 
 
